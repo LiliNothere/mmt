@@ -1,0 +1,77 @@
+# ACL động cho ML, một ACL cho mỗi cổng host (ingress): block-malicious-<switch>-p<port>.
+# Bình thường chỉ có rule allow-all. Khi phát hiện tấn công, ML service chèn rule
+# {actions: {allow: false}} lên ĐẦU danh sách của cổng nguồn tấn công; khi hết hạn thì xoá.
+# Faucet tự reload nhờ FAUCET_CONFIG_STAT_RELOAD=1.
+acls:
+  block-malicious-s1-p1:
+  - rule:
+      actions:
+        allow: true
+  block-malicious-s1-p2:
+  - rule:
+      actions:
+        allow: true
+  block-malicious-s1-p3:
+  - rule:
+      actions:
+        allow: true
+  block-malicious-s2-p1:
+  - rule:
+      actions:
+        allow: true
+  block-malicious-s2-p2:
+  - rule:
+      actions:
+        allow: true
+  block-malicious-s2-p3:
+  - rule:
+      actions:
+        allow: true
+  block-malicious-s3-p1:
+  - rule:
+      actions:
+        allow: true
+  block-malicious-s3-p2:
+  - rule:
+      actions:
+        allow: true
+  block-malicious-s3-p3:
+  - rule:
+      actions:
+        allow: true
+  block-malicious-s4-p1:
+  - rule:
+      actions:
+        allow: true
+  block-malicious-s4-p2:
+  - rule:
+      actions:
+        allow: true
+  block-malicious-s4-p3:
+  - rule:
+      actions:
+        allow: true
+  block-malicious-s5-p1:
+  - rule:
+      actions:
+        allow: true
+  block-malicious-s5-p2:
+  - rule:
+      actions:
+        allow: true
+  block-malicious-s5-p3:
+  - rule:
+      actions:
+        allow: true
+  block-malicious-s6-p1:
+  - rule:
+      actions:
+        allow: true
+  block-malicious-s6-p2:
+  - rule:
+      actions:
+        allow: true
+  block-malicious-s6-p3:
+  - rule:
+      actions:
+        allow: true
