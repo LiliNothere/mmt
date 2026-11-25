@@ -105,7 +105,6 @@ Thumbs.db
 # Project specific
 data/
 logs/
-*.csv
 *.log
 *.pcap
 
